@@ -40,3 +40,7 @@ while read user; do
   echo $user
 done < /etc/passwd
 
+while read package; do
+  sudo apt purge --autoremove $package
+done < ../configs/malicious_packages
+

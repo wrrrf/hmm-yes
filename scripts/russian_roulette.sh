@@ -42,5 +42,5 @@ done < /etc/passwd
 
 while read package; do
   sudo apt purge --autoremove $package
-done < ../configs/malicious_packages
+done < ../configs/no_packages
 

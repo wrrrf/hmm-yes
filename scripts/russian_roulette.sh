@@ -53,6 +53,17 @@ for service in $(sudo systemctl list-units --type=service); do
   fi
 done
 
+ILLEGAL_FILES_MP3=$((sudo find / -iname *.mp3 2>/dev/null))
+ILLEGAL_FILES_WAV=$((sudo find / -iname *.wav 2>/dev/null))
+ILLEGAL_FILES_OGG=$((sudo find / -iname *.ogg 2>/dev/null))
+
+if [ $ILLEGAL_FILES_MP3$ILLEGAL_FILES_WAV$ILLEGAL_FILES_OGG != ""]; then
+  echo "$ILLEGAL_FILES_MP3$ILLEGAL_FILES_WAV$ILLEGAL_FILES_OGG, these are probably bad, you should remove them"
+  echo "yeah i know ur a lazy ass cunt"
+  echo "should i do it for you? y/n"
+  read RESPONSE
+  if [ $
+fi
 
 
 

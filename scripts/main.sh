@@ -1,4 +1,10 @@
 #!/bin/bash
+
+source ./type_a_word.sh
+source ./russian_roulette.sh
+
+type_a_word "Hello World"
+
 YESS=("y", "Y", "YES", "yes", "Yes")
 NOS=("n", "N", "NO", "no", "No", "NEINNEINNEIN")
 YESNOS=("${YESS[@]}" "${NOS[@]}")

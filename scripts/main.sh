@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo chmod -R +x ..
+
 sudo ufw enable
 
 source ./type_a_word.sh

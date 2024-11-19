@@ -5,14 +5,17 @@ sudo ufw enable
 source ./type_a_word.sh
 source ./russian_roulette.sh
 
-YESS=("y", "Y", "YES", "yes", "Yes")
-NOS=("n", "N", "NO", "no", "No", "NEINNEINNEIN")
-YESNOS=("${YESS[@]}" "${NOS[@]}")
+if [ ! $1 == "--safe" ]; then
+    ./russian_roulette.sh
+fi
 
 ./packages.sh
-
 ./services.sh
 
+./users.sh
+./admins.sh
+
+./configs.sh
 
 
 

@@ -1,3 +1,2 @@
 # hmm-yes
-as of right now main.sh should not be run; 
-run the individual scripts instead
+shits sussy; how do i go to the next line in this file

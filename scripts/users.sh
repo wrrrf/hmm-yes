@@ -15,4 +15,4 @@ while read -r user; do
     username=$(echo "$user" | awk -F':' '{print $1}')
     echo "$username:InfMonkeTheorem-expt1" | sudo chpasswd
 
-done < /etc/passwd
+done < ../input/users

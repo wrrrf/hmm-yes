@@ -9,3 +9,7 @@ sudo chmod 640 /etc/login.defs
 
 cp ../sysconf/gdm_custom.conf /etc/gdm3/custom.conf
 cp ../sysconf/lightdm.conf /etc/lightdm/lightdm.conf
+
+wget https://raw.githubusercontent.com/klaver/sysctl/refs/heads/master/sysctl.conf
+cp ./sysctl.conf /etc/sysctl.conf
+ sysctl -e -p /etc/sysctl.conf #activate sysctl (in theory)

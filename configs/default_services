@@ -66,3 +66,6 @@ upower.service
 user-runtime-dir@1000.service
 user@1000.service
 wpa_supplicant.service
+whoopsie.service
+packagekit.service
+open-vm-tools.service

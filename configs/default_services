@@ -70,3 +70,5 @@ whoopsie.service
 packagekit.service
 open-vm-tools.service
 apcid.service
+cssclient.service
+css.service
